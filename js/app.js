@@ -97,6 +97,16 @@ $(document).ready(function(){
         }else{
             startLength++;
         }
+        if(startLength == textLength){
+            setTimeout(function(){
+                setInterval(function(){
+                    getLoveTime();
+                }, 1000);
+                $("#typed").fadeOut("fast", function(){
+                    $(".days").fadeIn("slow");
+                });
+            }, 1000);
+        };
         setTimeout(typeWriter, 80);
     }
 
@@ -141,9 +151,27 @@ $(document).ready(function(){
             typeWriter();
         }, 400);
     }, 16100);
-    setTimeout(function(){
-        
-    }, 80000);
+
+   
+
+    function getLoveTime()
+    {
+        let start = new Date("November 11, 2016 00:00:00").getTime();
+        let now = new Date().getTime();
+        let count = now - start;
+        let giay = 1000;
+        let phut = giay * 60;
+        let gio = phut * 60;
+        let ngay = gio * 24;
+        let d = Math.floor(count / ngay);
+        let h = Math.floor((count % ngay) / (gio));
+        let m = Math.floor((count % gio) / (phut));
+        let s = Math.floor((count % phut) / (giay));
+        $("#results span:nth-child(1)").text( d );
+        $("#results span:nth-child(3)").text( h );
+        $("#results span:nth-child(5)").text( m );
+        $("#results span:nth-child(7)").text( s );
+    };
 })
 
 
