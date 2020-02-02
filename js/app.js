@@ -149,7 +149,7 @@ $(document).ready(function(){
             $('.text').fadeIn("slow");
             typeWriter();
         }, 400);
-    }, 16100);
+    }, 16600);
 
     function getLoveTime()
     {
