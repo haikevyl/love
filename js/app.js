@@ -87,10 +87,10 @@ $(document).ready(function(){
     function typeWriter() {
         if(startLength < textLength){
             if(i < text[startLength].length){
-                $(".text").append(text[startLength].charAt(i));
+                $("#typed").append(text[startLength].charAt(i));
                 i++;
             }else{
-                $(".text").append("<br />");
+                $("#typed").append("<br />");
                 i = 0;
                 startLength++;
             }
@@ -141,6 +141,9 @@ $(document).ready(function(){
             typeWriter();
         }, 400);
     }, 16100);
+    setTimeout(function(){
+        
+    }, 80000);
 })
 
 
