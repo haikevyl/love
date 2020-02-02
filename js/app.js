@@ -40,7 +40,7 @@ $(document).ready(function(){
         }
           if (musicTracker == 'playMusic') {
              audios[activeTrack].pause();
-           increment();
+            increment();
              audios[activeTrack].play();
         } else {
           increment();
@@ -64,20 +64,19 @@ $(document).ready(function(){
 
     var text = [
         "Chào Vợ Yêu,",
-        "Vợ là Người Con Gái Chồng Yêu Nhất :))",
-        "Vợ Đáng Yêu Nhất !",
-        "Vợ Cũng yêu Chồng Nhất :) !",
-        "...Hôm nay là sinh Nhật Của Vợ, người không thể thiếu trong cuộc sống của chồng.",
-        "Cám Ơn, cha mẹ đang mang Vợ tới thế giới này.",
+        "Vợ là Người con gái Chồng yêu nhất :))",
+        "Vợ đáng yêu nhất !",
+        "Vợ cũng yêu Chồng nhất :) !",
+        "...Hôm nay là sinh nhật của Vợ, người không thể thiếu trong cuộc sống của Chồng.",
+        "Cám ơn, Cha Mẹ đã mang Vợ tới thế giới này.",
         "Cám Ơn, Ông Trờ đã sắp sếp cho hai ta quên nhau.",
-        "Cám ơn, zalo facebook mocha đã cho ta kết nối với nhau.",
-        "Cám Ơn Vợ, vì đã tới bên Chồng, yêu chồng.",
-        "sinh nhật Vợ yêu chồng chúc vợ vui vẻ, hạnh phúc, ...happy birthday...",
-        "nhân dịp này chồng cũng gửi tới vợ:",
+        "Cám Ơn Vợ, vì đã tới bên Chồng, yêu Chồng.",
+        "Sinh nhật Vợ yêu Chồng chúc vợ vui vẻ, hạnh phúc, ...HAPPY BIRTHDAY...",
+        "Vợ à:",
         "Có Vợ, Chồng sẽ không cần điều gì khác vợ",
-        "Yêu Vợ cho tới khi nào chồng không còn tồn tại <3",
-        "Ngoài vợ ra chồng không thể yêu thêm một ai nữa.",
-        "cho dù tương lai có ra sao chồng cũng vẫn sẽ mãi yêu vợ hướng về phía vợ mà đi.",
+        "Yêu Vợ cho tới khi nào Chồng không còn tồn tại <3",
+        "Ngoài Vợ ra Chồng không thể yêu thêm một ai nữa.",
+        "Cho dù tương lai có ra sao chồng cũng vẫn sẽ mãi yêu vợ hướng về phía vợ mà đi.",
         "~~ Yêu Vợ Thật Nhìu ~~"
     ];
 
@@ -151,8 +150,6 @@ $(document).ready(function(){
             typeWriter();
         }, 400);
     }, 16100);
-
-   
 
     function getLoveTime()
     {
