@@ -14,9 +14,57 @@ html, body {
     z-index: 100;
     background: white;
     animation: fadeOut 11s linear forwards;
+    -webkit-animation: fadeOut 11s linear forwards;
+    -moz-animation: fadeOut 11s linear forwards;
+    -ms-animation: fadeOut 11s linear forwards;
+    -o-animation: fadeOut 11s linear forwards;
 }
 
 @keyframes fadeOut {
+    0%, 91% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0%, 91% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0%, 91% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0%, 91% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
     0%, 91% {
         visibility: visible;
         opacity: 1;
@@ -32,6 +80,10 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     width: 380px;
     height: 40px;
     border: 2px solid black;
@@ -48,7 +100,15 @@ html, body {
     height: 100%;
     background-color: #000000;
     transform-origin: left;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
     animation: animationTitle 10s linear forwards;
+    -webkit-animation: animationTitle 10s linear forwards;
+    -moz-animation: animationTitle 10s linear forwards;
+    -ms-animation: animationTitle 10s linear forwards;
+    -o-animation: animationTitle 10s linear forwards;
 }
 
 .loadding .bar::after{
@@ -91,8 +151,11 @@ html, body {
 .ball div img {
     display: block;
     margin-top: -40px;
-    transform: rotate(180deg);
     animation: ball 2s linear infinite;
+    -webkit-animation: ball 2s linear infinite;
+    -moz-animation: ball 2s linear infinite;
+    -ms-animation: ball 2s linear infinite;
+    -o-animation: ball 2s linear infinite;
 }
 
 .ball div:nth-child(2) img,
@@ -104,14 +167,123 @@ html, body {
 @keyframes ball {
     0% {
         transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
     }
     50% {
         transform: rotate(200deg);
+        -webkit-transform: rotate(200deg);
+        -moz-transform: rotate(200deg);
+        -ms-transform: rotate(200deg);
+        -o-transform: rotate(200deg);
     }
     100% {
         transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
     }
 }
+
+@-webkit-keyframes ball {
+    0% {
+        transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
+    }
+    50% {
+        transform: rotate(200deg);
+        -webkit-transform: rotate(200deg);
+        -moz-transform: rotate(200deg);
+        -ms-transform: rotate(200deg);
+        -o-transform: rotate(200deg);
+    }
+    100% {
+        transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
+    }
+}
+
+@-moz-keyframes ball {
+    0% {
+        transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
+    }
+    50% {
+        transform: rotate(200deg);
+        -webkit-transform: rotate(200deg);
+        -moz-transform: rotate(200deg);
+        -ms-transform: rotate(200deg);
+        -o-transform: rotate(200deg);
+    }
+    100% {
+        transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
+    }
+}
+
+@-ms-keyframes ball {
+    0% {
+        transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
+    }
+    50% {
+        transform: rotate(200deg);
+        -webkit-transform: rotate(200deg);
+        -moz-transform: rotate(200deg);
+        -ms-transform: rotate(200deg);
+        -o-transform: rotate(200deg);
+    }
+    100% {
+        transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
+    }
+}
+
+@-o-keyframes ball {
+    0% {
+        transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
+    }
+    50% {
+        transform: rotate(200deg);
+        -webkit-transform: rotate(200deg);
+        -moz-transform: rotate(200deg);
+        -ms-transform: rotate(200deg);
+        -o-transform: rotate(200deg);
+    }
+    100% {
+        transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
+    }
+}
+
 
 .media-control {
     position: fixed;
@@ -143,6 +315,10 @@ html, body {
     font-size: 20px;
     background: #e6e6e6;
     transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
 .media-control a:hover{
     background: #cccccc;
@@ -192,6 +368,10 @@ html, body {
 .title .content div:nth-child(4)
 {
     transform: skewY(14.5deg);
+    -webkit-transform: skewY(14.5deg);
+    -moz-transform: skewY(14.5deg);
+    -ms-transform: skewY(14.5deg);
+    -o-transform: skewY(14.5deg);
     z-index: 91;
 }
 
@@ -199,13 +379,25 @@ html, body {
 .title .content div:nth-child(3)
 {
     transform: skewY(-4.5deg);
+    -webkit-transform: skewY(-4.5deg);
+    -moz-transform: skewY(-4.5deg);
+    -ms-transform: skewY(-4.5deg);
+    -o-transform: skewY(-4.5deg);
     z-index: 92;
 }
 
 .title .content div:nth-child(4)
 {
     transform: skewY(25deg);
+    -webkit-transform: skewY(25deg);
+    -moz-transform: skewY(25deg);
+    -ms-transform: skewY(25deg);
+    -o-transform: skewY(25deg);
     transform-origin: left;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
     top: -52px;
 }
 
@@ -222,6 +414,10 @@ html, body {
 {
     background: linear-gradient(-160deg, #ff0058, #673ab7);
     transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
 }
 
 .title .content div:nth-child(2)::before,
@@ -229,6 +425,10 @@ html, body {
 {
     background: linear-gradient(-20deg, #ff0058, #38009c);
     transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
 }
 
 .title .content div:nth-child(4)::before 
@@ -239,32 +439,116 @@ html, body {
 .title .content div:nth-child(1)::before 
 {
     animation: animationTitle 1s linear forwards;
+    -webkit-animation: animationTitle 1s linear forwards;
+    -moz-animation: animationTitle 1s linear forwards;
+    -ms-animation: animationTitle 1s linear forwards;
+    -o-animation: animationTitle 1s linear forwards;
     animation-delay: 11.1s;
+    -webkit-animation-delay: 11.1s;
+    -moz-animation-delay: 11.1s;
+    -ms-animation-delay: 11.1s;
+    -o-animation-delay: 11.1s;
     transform-origin: right;
+    -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    -ms-transform-origin: right;
+    -o-transform-origin: right;
 }
 
 .title .content div:nth-child(2)::before 
 {
     animation: animationTitle 1s linear forwards;
+    -webkit-animation: animationTitle 1s linear forwards;
+    -moz-animation: animationTitle 1s linear forwards;
+    -ms-animation: animationTitle 1s linear forwards;
+    -o-animation: animationTitle 1s linear forwards;
     animation-delay: 12.1s;
+    -webkit-animation-delay: 12.1s;
+    -moz-animation-delay: 12.1s;
+    -ms-animation-delay: 12.1s;
+    -o-animation-delay: 12.1s;
     transform-origin: left;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
 }
 
 .title .content div:nth-child(3)::before 
 {
     animation: animationTitle 1s linear forwards;
+    -webkit-animation: animationTitle 1s linear forwards;
+    -moz-animation: animationTitle 1s linear forwards;
+    -ms-animation: animationTitle 1s linear forwards;
+    -o-animation: animationTitle 1s linear forwards;
     animation-delay: 13.1s;
+    -webkit-animation-delay: 13.1s;
+    -moz-animation-delay: 13.1s;
+    -ms-animation-delay: 13.1s;
+    -o-animation-delay: 13.1s;
     transform-origin: right;
+    -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    -ms-transform-origin: right;
+    -o-transform-origin: right;
 }
 
 .title .content div:nth-child(4)::before 
 {
     animation: animationTitle 1s linear forwards;
+    -webkit-animation: animationTitle 1s linear forwards;
+    -moz-animation: animationTitle 1s linear forwards;
+    -ms-animation: animationTitle 1s linear forwards;
+    -o-animation: animationTitle 1s linear forwards;
     animation-delay: 14.1s;
+    -webkit-animation-delay: 14.1s;
+    -moz-animation-delay: 14.1s;
+    -ms-animation-delay: 14.1s;
+    -o-animation-delay: 14.1s;
     transform-origin: left;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
 }
  
 @keyframes animationTitle {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@-webkit-keyframes animationTitle {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@-moz-keyframes animationTitle {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@-ms-keyframes animationTitle {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@-o-keyframes animationTitle {
     0% {
         transform: scaleX(0);
     }
@@ -295,19 +579,71 @@ html, body {
 .title .content div:nth-child(1) h2
 {
     animation: fadeInText 0.5s linear forwards;
+    -webkit-animation: fadeInText 0.5s linear forwards;
+    -moz-animation: fadeInText 0.5s linear forwards;
+    -ms-animation: fadeInText 0.5s linear forwards;
+    -o-animation: fadeInText 0.5s linear forwards;
     animation-delay: 12.1s;
+    -webkit-animation-delay: 12.1s;
+    -moz-animation-delay: 12.1s;
+    -ms-animation-delay: 12.1s;
+    -o-animation-delay: 12.1s;
     font-size: 35px;
 }
 
 .title .content div:nth-child(3) h2
 {
     animation: fadeInText 0.5s linear forwards;
+    -webkit-animation: fadeInText 0.5s linear forwards;
+    -moz-animation: fadeInText 0.5s linear forwards;
+    -ms-animation: fadeInText 0.5s linear forwards;
+    -o-animation: fadeInText 0.5s linear forwards;
     animation-delay: 14.1s;
+    -webkit-animation-delay: 14.1s;
+    -moz-animation-delay: 14.1s;
+    -ms-animation-delay: 14.1s;
+    -o-animation-delay: 14.1s;
     font-size: 60px;
     font-weight: 900;
 }
 
 @keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInText {
     0% {
         opacity: 0;
     }
