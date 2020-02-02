@@ -1,0 +1,332 @@
+html, body {
+    font-family: "Rototo", sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.loadding {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: white;
+    animation: fadeOut 11s linear forwards;
+}
+
+@keyframes fadeOut {
+    0%, 91% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.loadding .bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.loadding .bar::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    transform-origin: left;
+    animation: animationTitle 10s linear forwards;
+}
+
+.loadding .bar::after{
+    content: "loadding...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    mix-blend-mode: difference;
+    font-weight: 900;
+}
+
+.ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    padding: 0 10%;
+    z-index: 95;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.ball div {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball div img {
+    display: block;
+    margin-top: -40px;
+    transform: rotate(180deg);
+    animation: ball 2s linear infinite;
+}
+
+.ball div:nth-child(2) img,
+.ball div:nth-child(4) img
+{
+    animation-delay: 1s;
+}
+
+@keyframes ball {
+    0% {
+        transform: rotate(160deg);
+    }
+    50% {
+        transform: rotate(200deg);
+    }
+    100% {
+        transform: rotate(160deg);
+    }
+}
+
+.media-control {
+    position: fixed;
+    right: -100%;
+    bottom: 0;
+    width: 50px;
+    height: 160px;
+    z-index: 95;
+    background: #e6e6e6;
+    padding: 10px 0;
+    transition: all 0.3s;
+}
+
+.media-control-active {
+    right: 0;
+}
+
+.media-control a {
+    position: fixed;
+    right: 0;
+    bottom: 160px;
+    display: block;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #333333;
+    font-size: 20px;
+    background: #e6e6e6;
+    transition: all 0.3s;
+}
+.media-control a:hover{
+    background: #cccccc;
+}
+
+.media-control button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.title .content {
+    position: relative;
+    width: 480px;
+}
+
+.title .content div {
+   position: relative;
+   height: 100px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -20px 0;
+}
+
+.title .content div:nth-child(2),
+.title .content div:nth-child(4)
+{
+    transform: skewY(14.5deg);
+    z-index: 91;
+}
+
+.title .content div:nth-child(1),
+.title .content div:nth-child(3)
+{
+    transform: skewY(-4.5deg);
+    z-index: 92;
+}
+
+.title .content div:nth-child(4)
+{
+    transform: skewY(25deg);
+    transform-origin: left;
+    top: -52px;
+}
+
+.title .content div::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.title .content div:nth-child(1)::before,
+.title .content div:nth-child(3)::before
+{
+    background: linear-gradient(-160deg, #ff0058, #673ab7);
+    transform: scaleX(0);
+}
+
+.title .content div:nth-child(2)::before,
+.title .content div:nth-child(4)::before
+{
+    background: linear-gradient(-20deg, #ff0058, #38009c);
+    transform: scaleX(0);
+}
+
+.title .content div:nth-child(4)::before 
+{
+    width: 60%;
+    left: 0;
+}
+.title .content div:nth-child(1)::before 
+{
+    animation: animationTitle 1s linear forwards;
+    animation-delay: 11.1s;
+    transform-origin: right;
+}
+
+.title .content div:nth-child(2)::before 
+{
+    animation: animationTitle 1s linear forwards;
+    animation-delay: 12.1s;
+    transform-origin: left;
+}
+
+.title .content div:nth-child(3)::before 
+{
+    animation: animationTitle 1s linear forwards;
+    animation-delay: 13.1s;
+    transform-origin: right;
+}
+
+.title .content div:nth-child(4)::before 
+{
+    animation: animationTitle 1s linear forwards;
+    animation-delay: 14.1s;
+    transform-origin: left;
+}
+ 
+@keyframes animationTitle {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.title .content div:nth-child(1)::after,
+.title .content div:nth-child(3)::after
+{
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.title .content div h2 {
+    position: absolute;
+    z-index: 93;
+    color: #ffffff;
+    opacity: 0;
+}
+
+.title .content div:nth-child(1) h2
+{
+    animation: fadeInText 0.5s linear forwards;
+    animation-delay: 12.1s;
+    font-size: 40px;
+}
+
+.title .content div:nth-child(3) h2
+{
+    animation: fadeInText 0.5s linear forwards;
+    animation-delay: 14.1s;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffff3370;
+    z-index: 90;
+    padding: 100px 20px 0 20px;
+    display: none;
+    color: #0000ff;
+    font-size: 16px;
+    line-height: 21px;
+}
